@@ -23,37 +23,37 @@ public class PracticeFormPage {
     }
 
     public PracticeFormPage setFirstName(String value) {
-        $("[id=firstName]").setValue(value);
+        $("#firstName").setValue(value);
 
         return this;
     }
 
     public PracticeFormPage setLastName(String value) {
-        $("[id=lastName]").setValue(value);
+        $("#lastName").setValue(value);
 
         return this;
     }
 
     public PracticeFormPage setUserEmail(String value) {
-        $("[id=userEmail]").setValue(value);
+        $("#userEmail").setValue(value);
 
         return this;
     }
 
     public PracticeFormPage setAddress(String value) {
-        $("[id=currentAddress]").setValue(value);
+        $("#currentAddress").setValue(value);
 
         return this;
     }
 
     public PracticeFormPage setUserNumber(String value) {
-        $("[id=userNumber]").setValue(value);
+        $("#userNumber").setValue(value);
 
         return this;
     }
 
     public PracticeFormPage selectGender(String value) {
-        $("[id=genterWrapper]").$(new ByText(value)).click();
+        $("#genterWrapper").$(new ByText(value)).click();
 
         return this;
     }
@@ -72,33 +72,33 @@ public class PracticeFormPage {
     }
 
     public PracticeFormPage setHobbies(String hobby) {
-        $("[id=hobbiesWrapper]").$(new ByText(hobby)).click();
+        $("#hobbiesWrapper").$(new ByText(hobby)).click();
 
         return this;
     }
 
     public PracticeFormPage uploadFile(String path) {
-        $("[id=uploadPicture]").uploadFile(new File(path));
+        $("#uploadPicture").uploadFile(new File(path));
 
         return this;
     }
 
     public PracticeFormPage setState(String state) {
-        $("[id=state]").click();
-        $("[id=stateCity-wrapper]").$(new ByText(state)).click();
+        $("#state").click();
+        $("#stateCity-wrapper").$(new ByText(state)).click();
 
         return this;
     }
 
     public PracticeFormPage setCity(String city) {
-        $("[id=city]").click();
-        $("[id=stateCity-wrapper]").$(new ByText(city)).click();
+        $("#city").click();
+        $("#stateCity-wrapper").$(new ByText(city)).click();
 
         return this;
     }
 
     public PracticeFormPage clickOnSubmit() {
-        $("[id=submit]").click();
+        $("#submit").click();
 
         return this;
     }

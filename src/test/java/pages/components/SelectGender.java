@@ -1,9 +1,9 @@
 package pages.components;
 
 public enum SelectGender {
-    Male("Male"),
-    Female("Female"),
-    Other("Other");
+    MALE("Male"),
+    FEMALE("Female"),
+    OTHER("Other");
 
     private final String gender;
 

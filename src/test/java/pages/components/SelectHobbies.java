@@ -1,9 +1,9 @@
 package pages.components;
 
 public enum SelectHobbies {
-    Sports("Sports"),
-    Reading("Reading"),
-    Music("Music");
+    SPORTS("Sports"),
+    READING("Reading"),
+    MUSIC("Music");
 
     private final String hobby;
 
