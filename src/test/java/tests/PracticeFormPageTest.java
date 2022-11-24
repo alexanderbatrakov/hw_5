@@ -1,30 +1,12 @@
 package tests;
 
 import org.junit.jupiter.api.Test;
-import pages.components.SelectGender;
-import pages.components.SelectHobbies;
-
+import static tests.TestData.*;
 
 public class PracticeFormPageTest extends TestBase {
 
-
     @Test
     void fillFormTest() {
-        //text boxes filling
-        String firstName = "Ivan";
-        String lastName = "Ivanov";
-        String userEmail = "test@test.com";
-        String userNumber = "9999999999";
-        String currentAddress = "Earth";
-        String gender = SelectGender.FEMALE.getGender();
-        String dayOfBirth = "01";
-        String monthOfBirth = "June";
-        String yearOfBirth = "1900";
-        String subject = "Math";
-        String hobby = SelectHobbies.MUSIC.getHobby();
-        String picPath = "src/test/resources/testfile.jpg";
-        String state = "NCR";
-        String city = "Delhi";
         practiceFormPage.openPage()
                 .setFirstName(firstName)
                 .setLastName(lastName)
@@ -50,6 +32,6 @@ public class PracticeFormPageTest extends TestBase {
                 .checkContent("Hobbies", hobby)
                 .checkContent("Picture", "testfile.jpg")
                 .checkContent("Address", currentAddress)
-                .checkContent("State and City", state + " " + city);
+              .checkContent("State and City", state + " " + city);
     }
 }
