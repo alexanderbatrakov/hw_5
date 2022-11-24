@@ -61,7 +61,7 @@ public class TestData {
                 {"Rajasthan", "Jaipur"},
                 {"Rajasthan", "Jaiselmer"}};
         int index = faker.number().numberBetween(0, test.length);
-        return test[index];
+        return test[index] ;
     }
 
 }
